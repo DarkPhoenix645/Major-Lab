@@ -1,0 +1,8 @@
+1. instructor - σ dept_name = 'Physics' (instructor)
+2. σ instructor.dept_name = 'Physics' ∧ tot_cred > 100 (instructor ⨯ student)
+3. π instructor.name, student.name ( σ instructor.dept_name = student.dept_name (instructor ⨯ student))
+4. π name, dept_name (ρ educator (instructor))
+5. instructor - σ dept_name = 'Physics' (instructor)
+6. ρ complete_list (ρ educator_list (π ID, name, dept_name (instructor)) ∪ (ρ student_list (π ID, name, dept_name (student))))
+7. π student.name (σ salary > 8000 (student ⨯ instructor))
+8. 

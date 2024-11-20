@@ -1,0 +1,11 @@
+Relations for Instagram Entities
+
+1. Users
+	A User can create multiple Posts (One-to-Many).
+	A User can write multiple Comments on Posts (One-to-Many).
+	A User can Like multiple Posts (One-to-Many).
+	A User can follow multiple Users (One-to-Many).
+
+2. Posts
+	A Post can have multiple Comments (One-to-Many).
+	A Post can have multiple Likes (One-to-Many).

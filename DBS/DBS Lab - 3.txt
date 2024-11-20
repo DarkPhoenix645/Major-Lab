@@ -1,0 +1,42 @@
+Entities for Instagram Relations
+
+Users(
+	User_ID (PK), 
+	Username, 
+	Email, 
+	Password, 
+	Full_Name, 
+	Bio, 
+	Profile_Picture_URL, 
+	Date_Joined
+)
+
+Posts(
+	Post_ID (PK), 
+	User_ID (FK from Users), 
+	Caption, 
+	Image_URL, 
+	Date_Posted
+)
+
+Comments(
+	Comment_ID (PK),
+	Post_ID (FK from Posts),
+	User_ID (FK from Users),
+	Comment_Text,
+	Date_Commented
+)
+
+Likes(
+	Like_ID (PK),
+	Post_ID (FK from Posts),
+	User_ID (FK from Users),
+	Date_Liked
+)
+
+Followers(
+	Follower_ID (PK),
+	User_ID (FK from Users),
+	Follower_User_ID (FK from Users),
+	Date_Followed
+)

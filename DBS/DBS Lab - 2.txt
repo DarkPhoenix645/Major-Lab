@@ -1,0 +1,4 @@
+1. π student.name, instructor.name (student ⨝ student.dept_name = instructor.dept_name instructor)
+2. π dept_name (σ total_salary > 100000 (γ dept_name; sum(salary) → total_salary (instructor)))
+3. π student.name (student ⨝ (σ total_salary > 150000 (γ dept_name; sum(salary) → total_salary (instructor))))
+4. π name (σ salary > avg_salary (instructor ⨝ (γ dept_name; avg(salary) → avg_salary (instructor))))
